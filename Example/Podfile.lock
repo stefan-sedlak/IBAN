@@ -1,0 +1,16 @@
+PODS:
+  - IBAN (0.0.1)
+
+DEPENDENCIES:
+  - IBAN (from `../`)
+
+EXTERNAL SOURCES:
+  IBAN:
+    :path: ../
+
+SPEC CHECKSUMS:
+  IBAN: 77d332fa895c2388ace259cae4b73adfb9abdbf5
+
+PODFILE CHECKSUM: 6b106e0b4c2c0465bcead8bebd65ace4c8f6f3cd
+
+COCOAPODS: 1.3.1

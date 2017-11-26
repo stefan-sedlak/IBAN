@@ -1,0 +1,9 @@
+use_frameworks!
+
+target 'IBAN_Example' do
+  pod 'IBAN', :path => '../'
+
+  target 'IBAN_Tests' do
+    inherit! :search_paths
+  end
+end

@@ -22,8 +22,8 @@ pod 'IBAN'
 
 ## Author
 
-stefan-sedlak, stefan.sedlak@wirecard.com
+Stefan Sedlak, stefan@sedlak.eu
 
 ## License
 
-IBAN is available under the MIT license. See the LICENSE file for more info.
+IBAN is available under the BSD 2-Clause license. See the LICENSE file for more info.

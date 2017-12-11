@@ -9,7 +9,10 @@
 
 @interface NSString (IBAN)
 
-- (BOOL)isValidIBAN;
-- (BOOL)isValidSEPAIBAN;
+- (BOOL)iban_isValid;
+- (BOOL)iban_isValidSEPA;
+
+- (NSArray<NSString *> *_Nullable)iban_list;
+- (NSArray<NSString *> *_Nullable)iban_listSEPA;
 
 @end

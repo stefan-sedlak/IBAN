@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'IBAN'
-  s.version          = '0.0.1'
-  s.summary          = 'NSString IBAN category to provide IBAN validation'
+  s.version          = '1.0.0'
+  s.summary          = 'NSString IBAN category to provide IBAN utils'
 
   s.description      = <<-DESC
 IBAN category provides:
@@ -9,6 +9,7 @@ IBAN category provides:
 * country code validation
 * length validation according country
 * country SEPA membership check
+* IBAN parsing from text
                        DESC
 
   s.homepage         = 'https://github.com/stefan-sedlak/IBAN'

@@ -31,5 +31,8 @@
 
 #include <stdbool.h>
 
+#define IBAN_MIN_LENGTH 15
+#define IBAN_MAX_LENGTH 32
+
 bool iban_is_sepa(const char *str);
 bool iban_is_valid(const char *str);

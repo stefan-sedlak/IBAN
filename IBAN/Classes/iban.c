@@ -304,13 +304,17 @@ bool iban_is_sepa(const char *str) {
     int i = 0;
     const char *p = str;
     while (*p) {
-        if (isprint(*p)) {
-            country_code[i++] = *p;
-            if (i == 2) {
-                break;
-            }
+        if (isspace(*p)) {
+            p++;
+            continue;
         }
-        p++;
+        if (!isupper(*p)) {
+            return false;
+        }
+        country_code[i++] = *p++;
+        if (i == 2) {
+            break;
+        }
     }
     if (i < 2) {
         return false;

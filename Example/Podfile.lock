@@ -1,5 +1,5 @@
 PODS:
-  - IBAN (0.0.1)
+  - IBAN (1.0.0)
 
 DEPENDENCIES:
   - IBAN (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  IBAN: 876397cd08143b17bff214a44147cbedd2a4834e
+  IBAN: 76b56f687c86323802ca6bddb2035e6c6ea3d9c9
 
 PODFILE CHECKSUM: 6b106e0b4c2c0465bcead8bebd65ace4c8f6f3cd
 

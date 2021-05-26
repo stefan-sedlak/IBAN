@@ -115,7 +115,7 @@ static const iban_info IBAN_INFOS[] = {
     {.country_code = {'M', 'Z'}, .length = 25, .is_sepa = false},
     {.country_code = {'N', 'E'}, .length = 28, .is_sepa = false},
     {.country_code = {'N', 'I'}, .length = 32, .is_sepa = false},
-    {.country_code = {'N', 'L'}, .length = 18, .is_sepa = false},
+    {.country_code = {'N', 'L'}, .length = 18, .is_sepa = true },
     {.country_code = {'N', 'O'}, .length = 15, .is_sepa = true },
     {.country_code = {'P', 'K'}, .length = 24, .is_sepa = false},
     {.country_code = {'P', 'L'}, .length = 28, .is_sepa = true },

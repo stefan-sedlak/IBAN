@@ -140,7 +140,7 @@ static const iban_info IBAN_INFOS[] = {
     {.country_code = {'X', 'K'}, .length = 20, .is_sepa = false}
 };
 
-char *str_trim_spaces(const char *str) {
+static char *str_trim_spaces(const char *str) {
     if (!str) {
         return 0;
     }
@@ -159,7 +159,7 @@ char *str_trim_spaces(const char *str) {
     return s;
 }
 
-BigZ BzAddIbanChar(const BigZ a, char c) {
+static BigZ BzAddIbanChar(const BigZ a, char c) {
     BigZ result = BZNULL;
     if (!a) {
         return result;
@@ -208,7 +208,7 @@ BigZ BzAddIbanChar(const BigZ a, char c) {
     return result;
 }
 
-BigZ BzFromIbanString(const char *iban) {
+static BigZ BzFromIbanString(const char *iban) {
     if (!iban) {
         return BZNULL;
     }
@@ -243,12 +243,12 @@ BigZ BzFromIbanString(const char *iban) {
     return result;
 }
 
-int iban_compare_country_code(const void *str, const void *info) {
+static int iban_compare_country_code(const void *str, const void *info) {
     int result = strncmp((const char *)str, ((const iban_info *)info)->country_code, 2);
     return result;
 }
 
-const iban_info *iban_find_info(const char *str) {
+static const iban_info *iban_find_info(const char *str) {
     if (!str) {
         return 0;
     }

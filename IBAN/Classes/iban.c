@@ -277,10 +277,10 @@ bool iban_is_valid(const char *str) {
     }
 
     BigZ iban_number = BzFromIbanString(iban);
+    free(iban); iban = 0;
     if (!iban_number) {
         return false;
     }
-    free(iban); iban = 0;
 
     BigZ b97 = BzFromUnsignedInteger(97);
     BigZ reminder = BzMod(iban_number, b97);
